@@ -1,9 +1,5 @@
 FROM ubuntu:18.04
 
-USER root
-
-RUN echo "nameserver 127.0.0.53" > /etc/resolv.conf
-
 WORKDIR /root
 
 ENV DEBIAN_FRONTEND noninteractive
