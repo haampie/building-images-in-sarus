@@ -5,7 +5,7 @@ To build images inside of [sarus](https://github.com/eth-cscsc/sarus) one needs 
 1. ```
    $ git clone -b rootless git@github.com:haampie/sarus.git
    $ cd sarus
-   $ spack add repo sarus/
+   $ spack repo add spack/
    ```
 2. Copy the values from `/etc/subuid` and `/etc/subgid` into the `uidMappings` and `gidMappings` in `src/runtime/OCIBundleConfig.cpp` (it's currently hard-coded).
 3. And create a dev-build of sarus:
